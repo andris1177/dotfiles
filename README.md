@@ -18,3 +18,5 @@ cd dotfiles
 ``` bash
 stow .
 ```
+
+(images/example.png)
