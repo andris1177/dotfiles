@@ -19,4 +19,4 @@ cd dotfiles
 stow .
 ```
 
-(images/example.png)
+![Alt text](images/example.png)
