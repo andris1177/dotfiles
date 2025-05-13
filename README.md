@@ -18,7 +18,7 @@ cd dotfiles
 ### wiki for the hyprland display settings: https://wiki.hyprland.org/Configuring/Monitors/
 ### wiki for hyprpaper: https://wiki.hyprland.org/Hypr-Ecosystem/hyprpaper/
 
-## And than use stow to link thme to the right place
+## And than use stow to link them to the right place
 
 ``` bash
 stow .
