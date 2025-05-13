@@ -13,7 +13,7 @@ git clone https://github.com/andris1177/dotfiles.git
 cd dotfiles
 ```
 
-## Don't forget to edit the hyprland config in .config/hypr/hyprland.conf where you have to change the monitor config according to your setup which is at line 18-20, and also you have to change which workspace is tied to which monitor, that you can find from line 31 to line 41. Also change the hyprpaper config which you can find in .config/hypr/hyprpaper.conf.
+## Don't forget to edit the hyprland config in .config/hypr/hyprland.conf where you have to change the monitor config according to your setup which is at line 19-21, and also you have to change which workspace is tied to which monitor, that you can find from line 24 to line 35. Also change the hyprpaper config which you can find in .config/hypr/hyprpaper.conf.
 
 ### wiki for the hyprland display settings: https://wiki.hyprland.org/Configuring/Monitors/
 ### wiki for hyprpaper: https://wiki.hyprland.org/Hypr-Ecosystem/hyprpaper/
