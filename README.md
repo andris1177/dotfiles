@@ -3,7 +3,7 @@
 ## These are my configuration files I use on my system, to us it install git and stow first
 
 ``` bash
-sudo pacman -S git stow hyprland hyprpaper hyprlock waybar ttf-jetbrains-mono-nerd
+sudo pacman -S git stow hyprland hyprpaper hyprlock waybar ttf-jetbrains-mono-nerd rofi 
 ```
 
 ## Than clone the repo
