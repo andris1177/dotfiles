@@ -7,23 +7,12 @@
     "kernel",
     "uptime",
     "packages",
-    "shell",
-    "display",
-    "de",
-    "wm",
-    "terminal",
-    "cpu",
-    "gpu",
     "memory",
-    "disk",
-    "localip",
-    "locale",
-    "break",
     "colors"
   ],
 
   "logo": {
-    "type": "auto"        // Logo type: auto, builtin, small, file, etc.
+    "type": "small"        // Logo type: auto, builtin, small, file, etc.
     }
 }
 
