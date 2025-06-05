@@ -24,9 +24,6 @@ shopt -s histappend
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-#PS1='[\u@\h \W]\$ '
 
 function git_branch() {
     if [ -d .git ] ; then
@@ -41,5 +38,7 @@ cd() {
   builtin cd "$@" && pwd
 }
 
-# Created by `pipx` on 2025-04-25 15:57:52
-export PATH="$PATH:/home/andris/.local/bin"
+alias ginit='git submodule update --init --recursive'
+alias la='ls -la'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'

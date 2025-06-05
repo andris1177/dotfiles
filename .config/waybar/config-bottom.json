@@ -24,7 +24,7 @@
     },
 
     "memory": {
-        "format": "  {}%",
+        "format": "󰍛 {}%",
         "on-click": "kitty -e btop"
     },
 
@@ -46,7 +46,7 @@
         "format-source": " {volume}%",
         "format-source-muted": "",
         "format-icons": {
-            "default": ["", "", ""]
+            "default": ["󰕿", "󰖀", "󰕾"]
         },
         "on-click": "pavucontrol"
     }, 

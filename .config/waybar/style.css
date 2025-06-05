@@ -13,7 +13,7 @@ window#waybar {
 
 button {
   box-shadow: inset 0 -3px transparent;
-  border: none;
+  border: 10px;
   border-radius: 0;
 }
 
