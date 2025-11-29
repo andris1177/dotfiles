@@ -25,5 +25,3 @@ stow .
 ```
 
 ## I got my wallpapers from here https://gitlab.com/dwt1/wallpapers
-
-![Alt text](images/example.png)
