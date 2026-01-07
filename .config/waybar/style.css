@@ -36,7 +36,7 @@ button:hover {
   background-color: #eb4d4b;
 }
 
-#clock, #cpu, #memory, #temperature, #network, #pulseaudio{
+#clock, #cpu, #memory, #temperature, #network, #pulseaudio, #custom-tailscale{
   margin: 2px;
   padding-left: 7px;
   padding-right: 7px;
@@ -55,4 +55,8 @@ button:hover {
 #clock {
   font-size: 14px;
   font-weight: bold;
+}
+
+#battery.critical > .icon {
+    color: #ff5555;
 }

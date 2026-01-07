@@ -5,6 +5,7 @@
     "modules-right": [
         "battery",
         "network",
+        "custom/brightness",
         "clock"],
 
 
@@ -16,11 +17,16 @@
             "critical": 15
         },
         "format": "{icon}   {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": "{capacity}%",
+        "format-charging": "{icon}   {capacity}%",
+        "format-plugged": "{icon}   {capacity}%",
         "format-alt": "{time} {icon}",
-        "format-full": " {capacity}%",
-        "format-icons": ["", "", "", "", ""]
+        "format-full": "{icon}   {capacity}%",
+        "format-icons": 
+        {
+            "discharging": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾"],
+            "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰂉"],
+            "full": ["󰁹"]
+        }
     },
 
     "network": {
@@ -36,6 +42,14 @@
     {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:L%Y-%m-%d %a %H:%M}"
-    }   
+    },
 
+    "custom/brightness": {
+        "exec": "brightnessctl -m | cut -d, -f4 | tr -d '%'",
+        "interval": 2,
+        "format": "󰃠  {}%",
+        "on-scroll-up": "brightnessctl set +5%",
+        "on-scroll-down": "brightnessctl set 5%-",
+        "tooltip": false
+    }
 }

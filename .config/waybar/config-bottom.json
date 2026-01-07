@@ -1,6 +1,8 @@
 {
     "position": "bottom",
     "height": 30,
+    "modules-left": [
+        "custom/tailscale"],
     "modules-right": [
         "pulseaudio",
         "cpu",
@@ -38,6 +40,11 @@
             "default": ["󰕿", "󰖀", "󰕾"]
         },
         "on-click": "pavucontrol"
-    }     
+    },
+    
+    "custom/tailscale": {
+        "exec": "tailscale status 2>/dev/null | head -n1 | grep -qi 'logged out\\|stopped' && echo ' ' || echo '󰖂'",
+        "interval": 10,
+        "tooltip-format": "tailscale vpn"
+    }
 }
-
