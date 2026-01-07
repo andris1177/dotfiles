@@ -1,15 +1,13 @@
 {
     "position": "bottom",
-    "height": 24,
-    "modules-left": ["hyprland/workspaces"],
+    "height": 30,
     "modules-right": [
+        "pulseaudio",
         "cpu",
         "temperature",
-        "memory",
-        "network",
-        "pulseaudio",
-        "clock"],
+        "memory"],
 
+    
     "cpu": {
         "format": ": {usage}%",
         "on-click": "kitty -e btop"
@@ -27,16 +25,7 @@
         "format": "󰍛 {}%",
         "on-click": "kitty -e btop"
     },
-
-    "network": {
-        "format-wifi": "  {essid} ({signalStrength}%)",
-        "format-ethernet": "󰈁",
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "format-linked": "󰖪 {ifname} (No IP)",
-        "format-disconnected": "󰈂",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
-
+ 
     "pulseaudio": {
         "scroll-step": 5,
         "format": "{icon}  {volume}% {format_source}",
@@ -49,11 +38,6 @@
             "default": ["󰕿", "󰖀", "󰕾"]
         },
         "on-click": "pavucontrol"
-    }, 
-
-    "clock": {
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:L%Y-%m-%d [%a] %H:%M}"
-    }       
+    }     
 }
 
