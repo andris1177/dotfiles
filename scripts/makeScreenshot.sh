@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Directory to save screenshots
-screenshot_dir="/data/photos-videos/screenshots"
+screenshot_dir="$HOME/Pictures/Screenshots"
 
 # Filename for the screenshot
 filename="$screenshot_dir/screenshot_$(date +"%Y-%m-%d_%H-%M-%S").png"
