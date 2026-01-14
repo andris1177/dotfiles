@@ -20,14 +20,17 @@ configuration {
     padding: 0;
     spacing: 0;
 
-    background-color: rgba(70, 70, 70, 0.4);
     color: rgba(255, 255, 255, 1);
-    width: 400px;
+    background-color: transparent;
+
 }
 
 window {
+    width: 400px;
     border-radius: 10px;
     transparency: "real";
+    background-color: rgba(46, 43, 54, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 mainbox {
@@ -35,7 +38,7 @@ mainbox {
 }
 
 inputbar {
-    background-color: rgba(30, 30, 30, 0.8);
+    background-color: rgba(169, 161, 225, 1);
     children: [prompt, entry];
 }
 
@@ -61,5 +64,9 @@ element-text {
 }
 
 element-text selected {
-    text-color: #00a9ac;
+    text-color: rgba(148, 90, 209, 1);
+}
+
+configuration {
+    terminal: "kitty";
 }

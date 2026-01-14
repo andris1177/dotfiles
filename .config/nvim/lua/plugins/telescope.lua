@@ -7,7 +7,14 @@ return {
             -- set telescope
             local builtin = require("telescope.builtin")
             -- file explorer ctrl + p
-            vim.keymap.set('n', '<C-p>', builtin.find_files, {})
+            vim.keymap.set('n', '<C-p>', function()
+    local builtin = require("telescope.builtin")
+    local ok = pcall(builtin.git_files)
+    if not ok then
+        builtin.find_files()
+    end
+end, {})
+
             -- live search space + fg
             vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
         end
