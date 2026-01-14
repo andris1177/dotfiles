@@ -1,10 +1,10 @@
 return { 
-    "ellisonleao/gruvbox.nvim", 
+    "catppuccin/nvim", 
     priority = 1000 , 
     config = true, 
     opts = ..., 
-    name = "gruvbox",
+    name = "catppuccin",
     config = function()
-        vim.cmd.colorscheme "gruvbox"
+        vim.cmd.colorscheme "catppuccin-mocha"
     end
 }
