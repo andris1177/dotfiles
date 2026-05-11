@@ -31,8 +31,7 @@ function git_branch() {
     fi
 }
 
-PS1=${pur}'$(git_branch)'${blu}'[\u] '${cyn}'\w '${grn}'$ '${clr}
-
+PS1="${pur}\u ${cyn}\w ${blu}\$(git_branch) ${grn}$ ${clr}"
 
 cd() {
   builtin cd "$@" && pwd
