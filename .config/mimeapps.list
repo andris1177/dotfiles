@@ -1,6 +1,5 @@
 [Added Associations]
 image/png=nsxiv.desktop;
-image/jpeg=nsxiv.desktop;
+application/pdf=okularApplication_pdf.desktop;chromium.desktop;
+application/vnd.comicbook+zip=calibre-gui.desktop;
 image/x-nikon-nef=nsxiv.desktop;
-application/pdf=okularApplication_pdf.desktop;
-application/x-shellscript=userapp-kitty -e nvim-6JKRI3.desktop;
